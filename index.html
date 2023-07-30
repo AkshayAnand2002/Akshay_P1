@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95ff37d342.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ------------header--------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p>Akshay's Portfolio</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <!-- --------SOME CHANGING ANIMATIONS----------- -->
+            <div class="header-text">
+                <p>Student at The LNM Institute Of Information Technology, Jaipur</p>
+                <h1>Hi, I am <span>Akshay Anand</span>.</h1>
+
+                <div class="cont">
+                    <h1>I am a <span class="auto-type"></span>.</h1>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ["Data Analyst", "Web developer", "Programmer", "ML Enthusiast"],
+                        typeSpeed: 100,
+                        backSpeed: 100,
+                        loop: true
+                    })
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/ak.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! My name is Akshay Anand, and I’m a third-year Communication and Computer engineering student at The LNM Institute Of Information Technology, Jaipur, Rajasthan. I’m interested in the field because it allows me to apply my math, science, and programming
+                        knowledge to solve exciting and valuable problems. I am also interested in the future of technology because even though computer technology has come a long way since I was a kid playing with basic calculators, there are still parts
+                        of our lives that depend on computers. I want to be able to help make those parts better!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analysis And Visualization</span><br> Skilled in Python Libraries such as Numpy,Pandas,Matplotlib and Seaborn and Data Visualization Tools such as Power BI and Tableau.</li>
+                            <li><span>Frontend Web Development</span><br> Skilled in HTML, CSS, JavaScript, Bootstrap and WordPress.</li>
+                            <li><span>Backend Web Development</span><br> Have an experienceof working with Django as backend.</li>
+                            <li><span>UI/UX Designing</span><br> Skilled in Figma Software for creation of prototypes of UIs.</li>
+                            <li><span>Machine Learning</span><br> Have the knowledge of different ML Algorithms for Classification and Regression Problems.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>January 2023- March 2023</span><br> Data Analyst Intern at Twilearn Edutech Pvt. Ltd. (Previously called as 'CollegeRankers Pvt. Ltd.')
+                                <br>Skills: Python PowerBI Tableau MS Office
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br> Pursuing Bachelor's degree in Communication And Computer Engineering at LNM Institute Of Information Technology, Jaipur, Rajasthan<br> Current CGPA: 8.06 (Till end of 4th semester)</li>
+                            <li><span>2018 - 2020</span><br> Completed 11th and 12th standards at Riverdale High School, Aurangabad, Maharashtra<br> Grade in class-12 th: 94.6%</li>
+                            <li><span>2017 - 2018</span><br> Completed 10th standard at Podar International School, Aurangabad, Maharashtra<br> Grade in class-10 th: 96%</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Available for all front-end roles involving HTML, CSS, JS, Wordpress and backend roles involving Django.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Available for Data analyst & data scientists roles involving data analysis, pre-processing, cleaning, visualization, trend-analysis and predictions using ML algorithms.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-researchgate"></i>
+                    <h2>Research Assistant</h2>
+                    <p>Have ample knowledge of ML, thus, would like to contribute to the research of professors in the field of ML.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <h2>Airbnb Data Analysis</h2>
+                    <p>Used Power BI dashboards and Python to analyze and get useful insights from the data.</p>
+                    <button><a
+                            href="https://github.com/AkshayAnand2002/AIRBNB-DATA-ANALYSIS/blob/main/Airbnb_Dataset_Analysis.ipynb">View</a></button>
+                    <button><a href="https://github.com/AkshayAnand2002/AIRBNB-DATA-ANALYSIS">Github
+                            Repo</a></button>
+                </div>
+
+                <div class="work">
+                    <h2>Swiggy Data Analysis</h2>
+                    <p>Used Power BI dashboards and Python to analyze and get useful insights from the data.
+                    </p>
+                    <button><a href="https://github.com/AkshayAnand2002/SWIGGY-DATA-ANALYSIS/blob/main/SWIGGY_DATA_ANALYSIS_.ipynb">View</a></button>
+                    <button><a href="https://github.com/AkshayAnand2002/SWIGGY-DATA-ANALYSIS">Github
+                            Repo</a></button>
+                </div>
+
+                <div class="work">
+                    <h2>YouTube Clone</h2>
+                    <br><br>
+                    <p>Using HTML, CSS & JS Implemented the frontend of YouTube Application. <br><br></p>
+                    <button><a href="https://apurvanand-2002.github.io/VidTube/">View</a></button>
+                    <button><a href="https://github.com/apurvanand-2002/VidTube">Github
+                            Repo</a></button>
+                </div>
+
+                <div class="work">
+                    <h2>Heart Disease Prediction</h2>
+                    <br><br>
+                    <p>Using Numpy, Pandas, Scikit-learn to create a Logistic Regression model to predict whether a patient has heart disease or not. Accuracy Score of the model: 81.96 %.<br><br><br></p><br><br><br>
+                    <button><a href="https://github.com/AkshayAnand2002/HEART-DISEASE-PREDICTION-BY-LOGISTIC-REGRESSION/blob/main/HEART_DISEASE_PREDICTION_BY_LOGISTIC_REGRESSION.ipynb">View</a></button>
+                    <button><a href="https://github.com/AkshayAnand2002/HEART-DISEASE-PREDICTION-BY-LOGISTIC-REGRESSION">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Django Login System</h2>
+                    <p>Used HTML, CSS, JS and Django framework to make a webpage which stores username and password of people registered and then checks its correctness for login, logout and user authentication.<br></p><br><br>
+                    <button><a href="https://github.com/AkshayAnand2002/DJANGO-LOGIN-SYSTEM-WITH-USER-AUTHENTICATION">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Weather App</h2>
+                    <p>Used HTML, CSS, JS and OpenWeatherMap API to fetch the data corresponding to the present weather conditions at all places of the world. It gives information about temperature and present weather status.
+                        <br><br><br><br><br>
+                    </p>
+                    <button><a href="https://akshayanand2002.github.io/WEATHER-APP-HTML-CSS-JAVASCRIPT-OPENWEATHERMAP-API/">View</a></button>
+                    <button><a href="https://github.com/AkshayAnand2002/WEATHER-APP-HTML-CSS-JAVASCRIPT-OPENWEATHERMAP-API">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Expense Tracker</h2>
+                    <p>Used HTML, CSS, Javascript to create a webpage taking inputs of income and expense to calculate the expenses by using javascript functions and arithmetic operators and history of all the transactions is also saved on the webpage.<br><br>
+                    </p>
+                    <button><a href="https://akshayanand2002.github.io/Expense-Tracker-HTML-CSS-JS/">View</a></button>
+                    <button><a href="https://github.com/AkshayAnand2002/Expense-Tracker-HTML-CSS-JS">Github Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Python Data Analysis</h2>
+                    <p>All Jupyter notebooks and files for Data Analysis And Visualization.<br></p><br><br>
+                    <button><a href="https://github.com/AkshayAnand2002/PYTHON-ASSIGNMENTS">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Customer Segmentation (Market Research Analysis)</h2>
+                    <p>Customers are segmented into different groups based on parameters of market research analysis.<br></p><br><br>
+                    <button><a href="https://github.com/AkshayAnand2002/MARKET-RESEARCH-ANALYSIS-CUSTOMER-SEGMENTATION">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>SQL IPL Database Analysis</h2>
+                    <p>Used SQL Queries to get insights from the dataset.<br></p><br><br>
+                    <button><a href="https://github.com/AkshayAnand2002/SQL-IPL-DATABASE-ANALYSIS">Github
+                            Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>House Price Prediction By XGBoost Regressor</h2>
+                    <p>Used XGBoost Regression Model to predict a continuous value i.e. house price.<br><br>
+                    </p>
+                    <button><a href="https://github.com/AkshayAnand2002/HOUSE_PRICE_PREDICTION_BY_XGBOOST_REGRESSOR/blob/main/HOUSE_PRICE_PREDICTION_BY_XGBOOST.ipynb">View</a></button>
+                    <button><a href="https://github.com/AkshayAnand2002/HOUSE_PRICE_PREDICTION_BY_XGBOOST_REGRESSOR">Github Repo</a></button>
+                </div>
+                <div class="work">
+                    <h2>Customer Segmentation By K Means Clustering</h2>
+                    <p>Used K Means Clustering unsupervised ML algorithm to segment customers into different groups based on annual income and spending approaches etc.<br><br>
+                    </p>
+                    <button><a href="https://github.com/AkshayAnand2002/CUSTOMER_SEGMENTATION_BY_K_MEANS_CLUSTERING/blob/main/CUSTOMER_SEGMENTATION_BY_K_MEANS_CLUSTERING.ipynb">View</a></button>
+                    <button><a href="https://github.com/AkshayAnand2002/CUSTOMER_SEGMENTATION_BY_K_MEANS_CLUSTERING">Github Repo</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">
+                        Contact Me
+                    </h1>
+                    <p><i class="fa-solid fa-envelope"></i> akshay2002anand@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9607027812</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/akshay-anand-737791228/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AkshayAnand2002"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <button class="btn btn2"><a href="./images/ak_resume.pdf" download="">Download
+                            Resume</a></button>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Akshay Anand</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwb-1eomluBYgKCHV5gYwaU9vA7f74J-XTfrdRHVCDnVXzJx7v18u-rhjyrNtd2NY1SDQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
